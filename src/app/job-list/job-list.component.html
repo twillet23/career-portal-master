@@ -6,7 +6,7 @@
      <div class="showing-result">
       <div class="open-positions">
         <span class="open-positions-text">{{ 'OPEN_POSITIONS'   | translate }} ({{ total }})</span>
-    </div>
+      </div>
 <!-- <button theme="secondary" (click)="openSidebar()" icon="filter" side="left">{{ 'FILTER'   | translate }}</button> -->
    </div>
   </div>
@@ -17,18 +17,16 @@
       <span class="company-logo">
         <img src="assets/cityscape1.jpg" alt>
       </span>
-      <h3>{{ job.title.replace('Allied','') }}</h3>
-              <h4 class="align-text-bottom bg-success text-white"><span><strong>${{ job.payRate }} /wk</strong></span></h4><br>
-              <p>ksfhjsdfhsadjkfhasdh fjkasdhjklfhasdfhjk sadhfkhsdfhkas</p>
+      <h1 class="text-primary">{{ job.title.replace('Allied','') }}</h1>
+              <h2 class="align-text-bottom text-success"><span><strong>${{ job.payRate }} /wk</strong></span></h2>
+              <p>Shift: 12hr Nights</p>
+              <br>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
              </div>
             </div>
           </div>
         </div>
       </div>
-    </div> 
-  </div>
-</div>   
 <div class="empty-list" *ngIf="!loading && jobs.length === 0">
   <i class="bhi-search-question"></i>
   {{ 'NO_MATCHING_JOBS ' | translate }}
