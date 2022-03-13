@@ -10,14 +10,15 @@
 
 <div *ngFor="let job of jobs" class="job-card" [routerLink]="'jobs/' + job.id" (click)="loadJob(job.id)">
     <div class="card mb-3" style="max-width: 900px;">
-        <div class="row g-0">
+        <div class="row  g-0">
           <div class="col-md-4">
-            <img src="assets/cityscape1.jpg" class="img-fluid rounded-start" alt="...">
+            <img src="assets/cityscape1.jpg" class="img-fluid rounded-start align-center" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">{{ job.title.replace('Allied','') }}</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h1 class="card-title gap-0"><span class="text-primary"><strong>{{ job.title.replace('Allied','') }}</strong></span></h1>
+              <h3 class="align-text-bottom bg-success text-white"><span><strong>${{ job.payRate }} /wk</strong></span></h3><br>
+              <p>ksfhjsdfhsadjkfhasdh fjkasdhjklfhasdfhjk sadhfkhsdfhkas</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
