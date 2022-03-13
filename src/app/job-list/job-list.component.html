@@ -6,40 +6,23 @@
 <div class="open-positions">
     <span class="open-positions-text">{{ 'OPEN_POSITIONS'   | translate }} ({{ total }})</span>
 </div>
-<novo-list direction="vertical" *ngIf="!loading && jobs.length > 0">
+<!-- <novo-list direction="vertical" *ngIf="!loading && jobs.length > 0"> -->
 
 <div *ngFor="let job of jobs" class="job-card" [routerLink]="'jobs/' + job.id" (click)="loadJob(job.id)">
-    <novo-list-item>
-        <item-header>
-            <item-title><a [href]="'jobs/' + job.id" [routerLink]="'jobs/' + job.id">{{ job.title.replace('Allied','') }}</a></item-title><br>
-            
-        </item-header>
-        <item-header-end>
-            <app-info-chips [job]="job"></app-info-chips>
-        </item-header-end>
-    </novo-list-item>
-    <span class="pay">${{ job.payRate }} /wk</span><br>
-    <span class="category" *ngIf="job.publishedCategory && showCategory">
-        {{ job.publishedCategory?.name }}
-    </span>
-    <span class="details">
-        <i class="bhi-location"></i>
-        {{ job.address.city }}, {{ job.address.state }} <br>
-    </span>
-    <span class="details2">
-         Start Date: {{ job.startDate | date: "shortDate" }} <br>
-         Shift:  <br>
-         Duration: <br>
-    </span>
-    <!-- <span class="description">
-        {{ job.publicDescription | stripHtml }}
-    </span> -->
-</div>
-
-</novo-list>
-<div class="load-more-button" *ngIf="!loading && moreAvailable">
-  <button theme="secondary" (click)="loadMore()" inverse>Load More</button>
-</div>
+    <div class="card mb-3" style="max-width: 900px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="assets/cityscape1.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ job.title.replace('Allied','') }}</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
 <div class="empty-list" *ngIf="!loading && jobs.length === 0">
   <i class="bhi-search-question"></i>
   {{ 'NO_MATCHING_JOBS ' | translate }}

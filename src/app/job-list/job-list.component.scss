@@ -86,7 +86,11 @@ novo-list {
       item-header {
         item-title {
             color: #4a89dc;
-            font-size: 1.5em
+            font-size: 2.5em;
+            .jobtitle {
+              font-size: 2em;
+              font-weight: bold;
+            }
         }
       }
       item-header-end {
