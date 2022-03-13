@@ -10,6 +10,15 @@
   }
 }
 
+.job-block .company-logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  transition: all 300ms ease;
+}
+
+
 novo-list {
   overflow: auto;
   min-height: 61.3vh;
