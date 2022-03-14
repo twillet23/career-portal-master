@@ -93,7 +93,20 @@ h2 {
   margin-inline-end: 0px;
   font-size: 1.25em;
 }
-
+.job-block .job-info {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.job-block .job-info li .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: #696969;
+}
 // novo-list {
 //   overflow: auto;
 //   min-height: 61.3vh;
