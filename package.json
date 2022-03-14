@@ -94,5 +94,20 @@
     "tslint": "~6.1.0",
     "typescript": "3.9.7",
     "webpack-cli": "^3.1.0"
-  }
+  },
+  "description": "[![Build Status](https://travis-ci.org/bullhorn/career-portal.svg)](https://travis-ci.org/bullhorn/career-portal)",
+  "main": "version.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twillet23/career-portal-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/twillet23/career-portal-master/issues"
+  },
+  "homepage": "https://github.com/twillet23/career-portal-master#readme"
 }

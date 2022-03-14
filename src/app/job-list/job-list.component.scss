@@ -19,6 +19,17 @@
 *, ::after, ::before {
   box-sizing: border-box;
 }
+body {
+  font-size: 16px;
+  color: #363636;
+  line-height: 28px;
+  font-weight: 400;
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+}
 .ls-section .ls-outer {
   position: relative;
 }
@@ -50,15 +61,13 @@ div.row {
 }
 .job-block .content {
   position: relative;
-  padding-left: 235px;
+  padding-left: 220px;
   min-height: 51px;
 }
 img {
-  display: inline-block;
-  max-width: 100%;
+  display: flex;
+  max-width: 90%;
   height: auto;
-}
-img, svg {
   vertical-align: middle;
 }
 .job-block .company-logo {
@@ -91,7 +100,7 @@ h2 {
   margin-block-end: .33em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 .job-block .job-info {
   position: relative;
@@ -99,13 +108,32 @@ h2 {
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
 .job-block .job-info li .icon {
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 22px;
   color: #696969;
+}
+ul, li {
+  list-style: none;
+  padding-top: 10px;
+  margin: 0px;
+}
+.job-block .job-info li {
+  position: relative;
+  font-size: 15px;
+  line-height: 15px;
+  color: #696969;
+  font-weight: 400;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 40px;
 }
 // novo-list {
 //   overflow: auto;
